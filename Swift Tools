@@ -1,0 +1,24 @@
+// a replicate of python's range function
+// startPoint is the number that the returned array will start with
+// once index reaches tillHere the loop stops
+// stepSize is the amount added to index
+func range(startPoint: Int, tillHere: Int, stepSize:Int) -> [Int]
+{
+    // the list that will be returned
+    var rangeList = [Int]()
+    
+    // define index as startPoint for clearer code
+    var index = startPoint
+    
+    // adds index to rangeList until index is greater than or equal to tillHere
+    while (index < tillHere)
+    {
+        // save the value of index to rangeList
+        rangeList.append(index)
+        
+        // add stepSize to index
+        index += stepSize
+
+    }
+    return rangeList
+}
